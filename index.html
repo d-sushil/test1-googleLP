@@ -7,53 +7,144 @@
   <meta　name="Test1" content="googleLP">
   <title>Google</title>
 <style>
-  #button2:hover{
-  height: 150px;
+ body{
+   background-color: white;
+   font-family: sans-serif;
+ }
+  #right-menu {
+    float: left;
+    list-style: none;
   }
-  h1{
-  
-    text-align: center;
-    font-size: 150px;
-    margin: 0px;
-  
+  #right-menu li{
+    display: inline-block;
+    padding: 8px;
   }
+  #left-menu{
+    float: right;
+    list-style: none;
+  }
+  #left-menu li{
+    display: inline-block;
+    padding: 8px;
+  }
+ a {
+   text-decoration: none;
+   color: black;
+ }
+ a:hover {
+   text-decoration: underline;
+ }
+ .center{
+   font-size: 100px;
+   padding: 112px 0px 20px 0;
+   text-align: center;
+   margin: 0 auto;
+   -webkit-text-fill-color: rgb(66 133 244);
+  font-family: sans-serif;
+ }
+ .form{
+   text-align: center;
+ }
+ #txtSearch {
+   width: 510px;
+   line-height: 33px;
+   padding: 5px 2.5px;
+   border-radius: 20px;
+   outline: 0px;
+ }
+
+.button {
+  text-align: center;
+  padding-top: 30px;
+ 
+}
+.information {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 150px;
+}
+.footer {
+  background-color:#f2f2f2;
+  position: fixed;
+left: 10;
+bottom: 0;
+width:100%
+}
+}
+.footer-left{
+  float: left;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.footer-right{
+  float: right;
+  list-style: none;
+}
+.footer-left ul li {
+  display: inline-block;
+    padding: 0px 0px 0px 5px;
+    margin: 0px 15px 0px 0px;
+}
+.footer-right ul  li{
+  display: inline-block;
+    padding: 0px;
+    margin: 0px 15px 0px 0px;
+}
+
+
 </style>
 </head>
 <body>
-  <navigation>
-    <ul class="right-menu">
-      <li>Googleについて</li>
-      <li>ストア</li>
+  <navigation >
+    <ul id="right-menu">
+      <li class="nav-links"><a href="" alt="about google"> Googleについて</a></li>
+      <li class="nav-links"> <a href="" alt="Google Store">ストア</a></li>
     </ul>
-    <ul>
-      <li>Gmail</li>
-      <li>画像</li>
-      <li class="menu"><img src="" alt=""></li>
-      <li class="gmail-loggedin"><img src="" alt=""></li>
+    <ul id="left-menu">
+      <li class="gmail-login"> <a href="https://www.gmail.com/" target="link_blank" > Gmail</a></li>
+      <li><a href="">画像</a></li>
+      <li class="menu"><a href=""><img src="img/menu-dice.jpeg" alt="menu-icon" height="17px" width="19 px" id="menu-icon"></a></li>
+      <li class="gmail-loggedin"><a href=""><img src="img/loggedin.jpeg" alt="" height="19px" width="19px" id="loggedin"></a></li>
     </ul>
   </navigation>
-  <h1 class="center">  Google </h1> <hr>
-  <form class="form">
-<input id="Search" name="Search Google" type="text" placeholder="Type here"> </input>
-<button id="button1" name="Search enter" type="button">Google検索</button>
-<button id="button2 " name="Search enter" type="button" >I'm Feeling Lucky</button>
-</form>
-</body>
-<footer>
 
-</footer div="footer">
-<p class="footer1">日本</p>
-<p class="footer2">
-  <ul class="footer-left">
-    <li>広告</li>
-    <li>ビジネス</li>
-    <li>検索の仕組み</li>
-  </ul>
-  <ul　class="footer-right">
-    <li>プライバシー</li>
-    <li>規約</li>
-    <li>設定</li>
-  </ul>
-</p>
+  <h1 class="center"> Google </h1> 
+
+  <div class="form">
+    <form id="Search" >
+<input id="txtSearch" name="Search Google" type="text" placeholder="Search text or enter URL"/>
+</div>
+<div class="button">
+<button >Google検索</button>
+<button>I'm Feeling Lucky</button>
+</form>
+</div>
+</div>
+<div class="information">
+  <p> <span style="color:red;">今すぐ見る：</span> <a href="" >2020年を検索で振り返ろう。</a></p> <br>
+  <p>Google 検索は次の言語でもご利用いただけます: <a href="">English</a> </p>
+</div>
+</body>
+
+<footer >
+  <div class="footer" >
+  <div class="footer1">  <p >日本</p> </div>     <hr>
+                <div  class="footer-left">
+                       <ul>
+                                           <li>広告</li>
+                                            <li>ビジネス</li>
+                                            <li>検索の仕組み</li>
+                        </ul>
+                  </div>
+                  <div class="footer-right">
+            <ul>
+                   <li>プライバシー</li>
+                  <li>規約</li>
+                   <li>設定</li>
+             </ul>  
+            </div>
+          </div>
+</footer>
  
  </html>
